@@ -1,0 +1,24 @@
+{
+    "env": {
+        "browser": true,
+        "es2022": true
+    },
+    "extends": ["eslint:recommended", "airbnb-base"],
+    "parserOptions": {
+        "ecmaVersion": 13,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": ["warn", 2],
+        "linebreak-style": "off",
+        "no-console": "off",
+        "func-names": "off",
+        "no-var": "error",
+        "no-param-reassign": [2, { "props": false }],
+        "no-plusplus": [2, { "allowForLoopAfterthoughts" : true }],
+        "quotes": ["error", "double"],
+        "operator-assignment": "off",
+        "import/extensions": "off",
+        "import/prefer-default-export": "off"
+    }
+}

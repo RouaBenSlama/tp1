@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TP1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        nav {
+            display: flex;
+            padding: 7px 0;
+        }
+
+        .nav-link-index {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 5px;
+            margin-left: 140px;
+        }
+
+        .nav-link-favoris {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+        .nav-link:hover {
+            color: #000000;
+        }
+
+        .btnLogout {
+            color: #000000;
+            background-color: rgb(246, 240, 240);
+            border-width: 0px;
+            border-radius: 5px;
+            margin-left: 1085px;
+            font-size: 1em;
+            padding: 5px;
+        }
+
+        .btnLogin {
+            color: #000000;
+            background-color: rgb(246, 240, 240);
+            border-width: 0px;
+            border-radius: 5px;
+            margin-left: 1230px;
+            font-size: 1em;
+            padding: 10px;
+        }
+
+        .row.columns.is-multiline.is-mobile {
+            color: #343434;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="nav-link-index">TP1</a>
+        <a href="favorites.html" id="nav-link-favoris" class="nav-link-favoris">Pokémons Favoris</a>
+        <a type="button" href="connexion.html" id="btnLogin" class="btnLogin">Connexion</a>
+        <a type="button" type="button" href="index.html" id="btnLogout" class="btnLogout">Déconnexion</a>
+    </nav>
+    <div class="container">
+        <div class="section">
+            <div class="columns">
+                <div class="field is-horizontal" style="padding-left:20px">
+                    <div class="field-label is-normal">
+                        <label class="label" for="species">Species</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control" style="min-width: 200px">
+                                <div class="select is-fullwidth">
+                                    <select id="species">
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal" style="padding-left:20px">
+                    <div class="field-label is-normal">
+                        <label class="label" for="poketypes">Poketypes</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control" style="min-width: 200px">
+                                <div class="select is-fullwidth">
+                                    <select id="poketypes">
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal" style="padding-left:20px">
+                    <div class="field-label is-normal">
+                        <label class="label" for="habitats">Habitat</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control" style="min-width: 200px">
+                                <div class="select is-fullwidth">
+                                    <select id="habitats">
+                                        <option></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-horizontal">
+                    <div class="field-label">
+                        <!-- Left empty for spacing -->
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                            <div class="control">
+                                <button id="btnFiltrer" class="button is-primary">
+                                    Filtrer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><a id="pokemons" class="row columns is-multiline is-mobile"></a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>e2273144</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

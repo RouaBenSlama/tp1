@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TP1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        nav {
+    display: flex;
+    padding: 7px 0;
+    }
+
+    .nav-link-index {
+        color: #000000;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 5px;
+        margin-left: 140px;
+    }
+
+    .nav-link-favoris {
+        color: #000000;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 5px;
+        margin-left: 10px;
+    }
+
+    .nav-link:hover {
+    color: #000000;
+    }
+
+    .btnLogout {
+        color: #000000;
+        background-color: rgb(246, 240, 240);
+        border-width: 0px;
+        border-radius: 5px;
+        margin-left: 1085px;
+        font-size: 1em;
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="nav-link-index">TP1</a>
+            <a href="favorites.html" class="nav-link-favoris">Pokémons Favoris</a>
+            <a type="button" href="index.html" class="btnLogout">Déconnexion</a>
+          </nav>
+    </header>
+<div class="container">
+    <div class="section">
+        <div id="pokemons" class="row columns is-multiline"></div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>e2273144</p>
+        </div>
+    </div>
+</footer>
+<script src="favorites.js" type="module"></script>
+</body>
+</html>

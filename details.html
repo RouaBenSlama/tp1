@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Détails d'un pokemon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        nav {
+            display: flex;
+            padding: 7px 0;
+        }
+
+        .nav-link-index {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 5px;
+            margin-left: 140px;
+        }
+
+        .nav-link-favoris {
+            color: #000000;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 5px;
+            margin-left: 10px;
+        }
+
+        .nav-link:hover {
+            color: #000000;
+        }
+
+        .btnLogout {
+            color: #000000;
+            background-color: rgb(246, 240, 240);
+            border-width: 0px;
+            border-radius: 5px;
+            margin-left: 1085px;
+            font-size: 1em;
+            padding: 5px;
+        }
+
+        .btnLogin {
+            color: #000000;
+            background-color: rgb(246, 240, 240);
+            border-width: 0px;
+            border-radius: 5px;
+            margin-left: 1230px;
+            font-size: 1em;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="nav-link-index">TP1</a>
+            <a href="favorites.html" id="nav-link-favoris" class="nav-link-favoris">Pokémons Favoris</a>
+            <a type="button" href="connexion.html" id="btnLogin" class="btnLogin">Connexion</a>
+            <a type="button" type="button" href="index.html" id="btnLogout" class="btnLogout">Déconnexion</a>
+        </nav>
+    </header>
+    <div id="app" class="container">
+        <div class="section has-text-centered">
+            <div id="boutonsAjouterSupprimer">
+                <button id="ajouterFavoris" class="button is-primary is-hidden">Ajouter aux favoris</button>
+                <button id="supprimerFavoris" class="button is-danger is-hidden">Supprimer des favoris</button>
+            </div>
+            <ul id="detailsPokemon">
+                <li>Name: <label id="name"></label></li>
+                <li>HP: <label id="hp"></label></li>
+                <li>Attack: <label id="attack"></label></li>
+                <li>Defense: <label id="defense"></label></li>
+                <li>Height: <label id="height"></label></li>
+                <li>SpecialAttack: <label id="specialattack"></label></li>
+                <li>SpecialDefense: <label id="specialdefense"></label></li>
+                <li>Speed: <label id="speed"></label></li>
+                <li>Weight: <label id="weight"></label></li>
+                <li>ImgURL: <img id="imgURL" src="" alt="" /></li>
+                <li>
+                    CryURL:
+                    <audio controls id="cryAudio">
+                        <source type="audio/ogg" id="cryURL">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+                <li>Habitat.Name: <label id="habitatName"></label></li>
+                <li>Species.Name: <label id="speciesName"></label></li>
+                <li>Evolution.Name: <label id="evolutionName"></label></li>
+                <li>
+                    <img id="evolutionImgURL" src="" alt="" />
+                </li>
+                <li>Evolution.Evolution.Name: <label id="evolutionEvolutionName"></label></li>
+                <li>
+                    <img id="evolutionEvolutionImgURL" src="" alt="" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="details.js" type="module"></script>
+</body>
+
+</html>
